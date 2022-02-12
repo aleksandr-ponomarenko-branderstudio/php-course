@@ -15,7 +15,7 @@ if(($num1 > $num2)&&($num1 > $num3)){
 }elseif(($num3 > $num1)&&($num3 > $num2)){
     $numMax = $num3;
 }
-//наименшее
+//наименьшее
 if(($num1 < $num2)&&($num1 < $num3)){
     $numMin = $num1;
 }elseif(($num2 < $num3)&&($num2 < $num1)){
@@ -31,7 +31,7 @@ if(($num1 == $num2)||($num1 == $num3)){
 }
 
 echo "\n", 'Наибольшее значение:', $numMax;
-echo "\n", 'Наименшее значение:', $numMin;
+echo "\n", 'Наименьшее значение:', $numMin;
 if($numEq == true){
  echo "\n", 'Первое из равных значений:', $numEq;
 }else{
