@@ -1,22 +1,18 @@
 <?php
-function primeNumber($num){
-        if ($num > 1){
-            for ($div = 2; $div < $num; $div++){
-                if ($num % $div === 0){
-                    echo 'Число не простое';
-                    return;
-                }
-                else{
-                    echo 'Число простое';
-                }
-            }
-        }
-        else {
-            echo 'Число простое';
-        }
+function primeNumber($num, $div = 2){
+    if ($num % $div === 0){
+        echo 'Число не простое';
+        return;
+        primeNumber($num, $div++);
+    }
+    else{
+        echo 'Число простое';
+    }
+    
 }
-
-$num = rand();
+$uNum = rand(1, 100);
+echo $uNum, "\n";
+primeNumber($uNum);
 primeNumber($num)
 ?>
 
