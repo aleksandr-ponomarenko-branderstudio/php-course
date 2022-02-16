@@ -7,8 +7,7 @@ function primeNumber($num, $div = 2){
     }
     else{
         echo 'Число простое';
-    }
-    
+    } 
 }
 $uNum = rand(1, 100);
 echo $uNum, "\n";
