@@ -13,6 +13,6 @@ function primeNumber($num, $div = 2){
 $uNum = rand(1, 100);
 echo $uNum, "\n";
 primeNumber($uNum);
-primeNumber($num)
+
 ?>
 
